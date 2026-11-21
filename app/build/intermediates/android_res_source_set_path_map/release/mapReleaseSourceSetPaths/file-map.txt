@@ -1,0 +1,8 @@
+com.example.android.SimpleCalc.app-pngs-0 /home/user/School/MOAp/Naloga7_SimpleCalc/app/build/generated/res/pngs/release
+com.example.android.SimpleCalc.app-updated_navigation_xml-1 /home/user/School/MOAp/Naloga7_SimpleCalc/app/build/generated/updated_navigation_xml/release
+com.example.android.SimpleCalc.app-packageReleaseResources-2 /home/user/School/MOAp/Naloga7_SimpleCalc/app/build/intermediates/incremental/release/packageReleaseResources/merged.dir
+com.example.android.SimpleCalc.app-packageReleaseResources-3 /home/user/School/MOAp/Naloga7_SimpleCalc/app/build/intermediates/incremental/release/packageReleaseResources/stripped.dir
+com.example.android.SimpleCalc.app-release-4 /home/user/School/MOAp/Naloga7_SimpleCalc/app/build/intermediates/merged_res/release/mergeReleaseResources
+com.example.android.SimpleCalc.app-main-5 /home/user/School/MOAp/Naloga7_SimpleCalc/app/src/main/res
+com.example.android.SimpleCalc.app-release-6 /home/user/School/MOAp/Naloga7_SimpleCalc/app/src/release/res
+gradleHome-0 /home/user/.gradle

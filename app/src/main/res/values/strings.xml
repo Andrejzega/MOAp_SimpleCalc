@@ -8,4 +8,8 @@
     <string name="div_operation_text">Div</string>
     <string name="mul_operation_text">Mul</string>
     <string name="computationError">Error</string>
+    <string name="operand_one_empty">Enter the first number</string>
+    <string name="operand_two_empty">Enter the second number</string>
+    <string name="both_operands_empty">Enter both numbers</string>
+    <string name="divide_by_zero">Cannot divide by zero</string>
 </resources>

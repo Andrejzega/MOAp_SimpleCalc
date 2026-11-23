@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
             compute(Calculator.Operator.DIV);
         } catch (IllegalArgumentException iae) {
             Log.e(TAG, "IllegalArgumentException", iae);
-            mResultTextView.setText(getString(R.string.computationError));
+            mResultTextView.setText(getString(R.string.divide_by_zero));
         }
     }
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
             operandTwo = getOperand(mOperandTwoEditText);
         } catch (NumberFormatException nfe) {
             Log.e(TAG, "NumberFormatException", nfe);
-            mResultTextView.setText(getString(R.string.computationError));
+            mResultTextView.setText(getInputErrorMessage());
             return;
         }
 
@@ -86,6 +86,27 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         mResultTextView.setText(result);
+    }
+
+    private String getInputErrorMessage() {
+        boolean firstEmpty = TextUtils.isEmpty(mOperandOneEditText.getText().toString());
+        boolean secondEmpty = TextUtils.isEmpty(mOperandTwoEditText.getText().toString());
+
+        if (firstEmpty) {
+            mOperandOneEditText.setError(getString(R.string.operand_one_empty));
+        }
+        if (secondEmpty) {
+            mOperandTwoEditText.setError(getString(R.string.operand_two_empty));
+        }
+
+        if (firstEmpty && secondEmpty) {
+            return getString(R.string.both_operands_empty);
+        } else if (firstEmpty) {
+            return getString(R.string.operand_one_empty);
+        } else if (secondEmpty) {
+            return getString(R.string.operand_two_empty);
+        }
+        return getString(R.string.computationError);
     }
 
     private static Double getOperand(EditText operandEditText) {

@@ -72,6 +72,11 @@ public class CalculatorTest {
         mCalculator.div(32d, 0d);
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void divZeroByZeroThrows() {
+        mCalculator.div(0d, 0d);
+    }
+
     @Test
     public void mulTwoNumbers() {
         double resultMul = mCalculator.mul(32d, 2d);
